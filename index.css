@@ -1,0 +1,60 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Lobster", cursive;
+  background-color: rgb(241, 241, 241)
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0.8);
+}
+.loader img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imageContainer{
+    margin: 10px 30%  
+    /* in total there will be 60% margin and 40%image */
+}
+
+.imageContainer img{
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* media query: large Smartphone */
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+    .imageContainer{
+        margin: 10px;
+    }
+}
